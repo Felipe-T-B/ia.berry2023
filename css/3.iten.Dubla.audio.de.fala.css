@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #D9D9D9;
+    box-sizing: border-box;
+}
+
+.heading-3 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+    margin-top: 180px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: flex; /* Alteração para usar o flexbox */
+}
+
+.image-container,
+.description-container {
+    box-sizing: border-box;
+}
+
+.image-container {
+    width: 30%; /* Definindo 50% da largura para a imagem */
+    margin-left: 15%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.description-container {
+    padding: 20px;
+    width: 50%; /* Definindo 50% da largura para a descrição */
+    margin-top: -2%;
+}
+
+.like-button,
+.free-or-paid,
+.payment-options,
+.free-option,
+.paid-option {
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+.like-button {
+    display: block;
+    margin-top: 10px;
+    width: 60px; /* Ajuste a largura conforme necessário */
+    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Adicione as seguintes regras para ajustar os lados */
+.like-button.left {
+    margin-right: 5px; /* Ajuste a margem direita conforme necessário */
+}
+
+.like-button.right {
+    margin-left: 5px; /* Ajuste a margem esquerda conforme necessário */
+}
+
+
+.visit-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-left: -295px;
+    margin-top: -3%;
+}
+
+
+
+.free-option,
+.paid-option {
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-right: 3%;
+}
+
+.free-option {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+.paid-option {
+    background-color: #5cb85c;
+    color: #fff;
+    margin-left: 20%;
+    margin-top: -41px;
+}
+
+
+
+footer {
+    background-color: #8c8c8c;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: -60%;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+    visibility: visible; /* Alterado para visible para tornar o rodapé visível */
+    opacity: 1; /* Alterado para 1 para tornar o rodapé visível */
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+p a {
+    color: #222be8;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.show-footer footer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-lateral {
+    width: 80px;
+    height: 100vh;
+    background-color: #262626;
+    padding: 20px 0 10px 1%;
+    box-shadow: 3px 0 5px -2px #000000;
+    position: fixed;
+    top: 51px;
+    left: -25px;
+    z-index: 2;
+    overflow-y: auto;
+    transition: width 0.2s;
+    scrollbar-width: var(-25px);
+    scrollbar-color: #8c8c8c #4F6573;
+}
+
+.menu-lateral:hover {
+    width: 300px;
+}
+
+.menu-lateral::-webkit-scrollbar {
+    width: 10px;
+}
+
+.menu-lateral::-webkit-scrollbar-thumb {
+    background-color: #8C8C8C;
+}
+
+.menu-lateral::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 8px;
+    margin-left: 10px;
+    margin-top: -60px;
+    margin-bottom: -30px;
+}
+
+.btn-expandir > i {
+    color: #fff;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li.item-menu {
+    transition: background-color 0.2s;
+    margin-bottom: -13px;
+}
+
+ul li.item-menu:hover {
+    background: #243340;
+}
+
+ul li.item-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 10px;
+}
+
+ul li.item-menu a .icon > i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+ul li.item-menu a .icon > i.bi-palette,
+ul li.item-menu a .icon > i.bi-camera-video,
+ul li.item-menu a .icon > i.bi-music-note,
+ul li.item-menu a .icon > i.bi-shield-check,
+ul li.item-menu a .icon > i.bi-pencil {
+    color: #fff;
+}
+
+.Rectangle-5 {
+    width: 100%;
+    height: 35px;
+    margin: 0;
+    padding: 8px 7px 8px;
+    background-color: #262626;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+}
+.botao-nome-empresa {
+    font-size: 20px; /* Use uma unidade relativa para ajustar o tamanho do texto */
+    color: #ffffff;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-right: 10%; /* Use uma porcentagem para ajustar a margem */
+    position: fixed;
+    top: -6px; /* Use uma porcentagem para ajustar a posição superior */
+    right: 80%; /* Use uma porcentagem para ajustar a posição direita */
+    z-index: 1000;
+    display: inline-block;
+    padding: 1% 2%; /* Use porcentagens para ajustar o preenchimento */
+    background-color: #0ddf1b00;
+}
+
+.opção-aberta {
+    font-size: 20px; /* Use uma unidade relativa para ajustar o tamanho do texto */
+    color: #ffffff;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-right: 5%; /* Use uma porcentagem para ajustar a margem */
+    position: fixed;
+    top: -1%; /* Use uma porcentagem para ajustar a posição superior */
+    right: 35%; /* Use uma porcentagem para ajustar a posição direita */
+    z-index: 1000;
+    display: inline-block;
+    padding: 1% 2%; /* Use porcentagens para ajustar o preenchimento */
+    background-color: #0ddf1b00;
+}
+.wrapper {
+    min-height: 100vh;
+    position: relative;
+    margin-bottom: -50px;
+}
