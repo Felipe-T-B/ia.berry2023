@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>IA-Berry</title>
+  <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/3.iten.conversão.de.fala.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  
+</head>
+<body>
+  <div class="Rectangle-5"></div>
+
+
+<a href="#" id="botao-nome-empresa" class="botao-nome-empresa">IA-Berry</a>
+<a href="#" id="botao-nome-design" class="botao-nome-design">design</a>
+
+<body onscroll="showFooter()">
+  <!-- ... (seu conteúdo) ... -->
+  <div class="footer-placeholder"></div>
+  <footer>
+    <!-- Conteúdo do rodapé -->
+  </footer>
+
+  <script>
+    function showFooter() {
+      var scrollPosition = window.scrollY + window.innerHeight;
+      var documentHeight = document.documentElement.scrollHeight;
+
+      if (scrollPosition >= documentHeight - 50) { // 50 é um valor de folga para ativar o rodapé antes de chegar ao final absoluto
+        document.body.classList.add("show-footer");
+      } else {
+        document.body.classList.remove("show-footer");
+      }
+    }
+  </script>
+
+<div class="container">
+  <div class="image-container">
+      <img src="https://assets-global.website-files.com/63994dae1033718bee6949ce/64f1147600c84a67f7e49702_6376d2cb7900c82263cf10c3_og_heroimage-p-2000.png" alt="Descrição da Imagem">
+      <h1 class="heading-3">Acoust</h1>
+  </div>
+  <div class="description-container">
+      <h2>Descrição:</h2>
+      <p>Acoust é uma ferramenta online de conversão de texto em fala (TTS) que usa as mais recentes tecnologias de IA para gerar fala realista. Pode ser usado para produzir locuções, ouvir documentos e artigos e desenvolver conteúdo de áudio. Ele suporta mais de 30 idiomas e fornece mais de 100 vozes naturais para conversão de texto em fala. Ele também oferece um assistente de IA, criador de vídeo e prompt de IA e reforço TTS.</p>
+      
+      <button class="like-button" onclick="like()">Like</button>
+      <p class="like-count">0 Likes</p>
+
+      <div class="payment-options">
+          <div class="free-option">Grátis</div>
+
+      </div>
+
+      <!-- Conteúdo do seu site -->
+      <button class="visit-button" onclick="scrollToSection()">Visitar Site</button>
+
+      <!-- Seção para onde o botão levará -->
+      <section id="audiowriter-section" data-link="https://www.acoust.io/">
+          <!-- Conteúdo da seção -->
+      </section>
+      
+      <script>
+          function scrollToSection() {
+              var section = document.getElementById('audiowriter-section');
+              var link = section.getAttribute('data-link');
+              window.location.href = link;
+          }
+      </script>
+      
+
+<script>
+let liked = false;
+let likeCount = 0;
+
+function like() {
+  if (!liked) {
+      likeCount++;
+      updateLikeCount();
+      liked = true;
+  } else {
+      alert('Você já curtiu isso.');
+  }
+}
+
+function updateLikeCount() {
+  const likeCountElement = document.querySelector('.like-count');
+  likeCountElement.textContent = `${likeCount} Likes`;
+}
+</script>
+
+
+<div class="Rectangle-5"></div>
+
+
+<a href="#" id="botao-nome-empresa" class="botao-nome-empresa">IA-Berry</a>
+<a href="#" id="opção-aberta" class="opção-aberta">converção de fala para texto</a>
+
+<body onscroll="showFooter()">
+<!-- ... (seu conteúdo) ... -->
+<div class="footer-placeholder"></div>
+<footer>
+  <!-- Conteúdo do rodapé -->
+</footer>
+
+<script>
+  function showFooter() {
+    var scrollPosition = window.scrollY + window.innerHeight;
+    var documentHeight = document.documentElement.scrollHeight;
+
+    if (scrollPosition >= documentHeight - 50) { // 50 é um valor de folga para ativar o rodapé antes de chegar ao final absoluto
+      document.body.classList.add("show-footer");
+    } else {
+      document.body.classList.remove("show-footer");
+    }
+  }
+</script>
+
+<footer>
+  <p>
+      <strong>Contato:</strong> Email: <a href="mailto:IA.Berry.com@gmail.com">IA.Berry.com@gmail.com</a>
+  </p>
+  <p>
+      <strong>Desenvolvido por F.T.B. Software:</strong> Este site foi concebido e implementado pela F.T.B. Soft.ware, especializada em soluções digitais de alta qualidade.
+  </p>
+  <p>
+      <strong>Melhorias Contínuas:</strong> Comprometemo-nos com a excelência contínua. Estamos empenhados em aprimorar constantemente este site para oferecer uma experiência otimizada.
+  </p>
+  <p>
+      &copy; 2023 F.T.B. Software. Todos os direitos reservados.
+  </p>
+</footer>
+
+  
+<nav class="menu-lateral">
+
+  <div class="btn-expandir">
+    <i class="bi bi-list"></i>
+    <nav class="menu-lateral">
+  
+      <div class="btn-expandir">
+        <i class="bi bi-list"></i>
+        <nav>
+          <ul>
+            <li class="item-menu">
+              <a href="../html/inicio.html">
+                <span class="icon"><i class="bi bi-house"></i></span>
+                <span class="txt-link">inicio</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../html/Design.html">
+                <span class="icon"><i class="bi bi-palette"></i></span>
+                <span class="txt-link">Marketing</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../html/imagen.html">
+                <span class="icon"><i class="bi bi-images"></i></span>
+                <span class="txt-link">Edição de Imagens</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../html/editor.video.html">
+                <span class="icon"><i class="bi bi-camera-video"></i></span>
+                <span class="txt-link">Edição de Vídeo</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../html/assistente.virtual.html">
+                <span class="icon"><i class="bi bi-music-note"></i></span>
+                <span class="txt-link">Assistentes Virtuais</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../html/dublador.de.audio.html">
+                <span class="icon"><i class="bi bi-shield-check"></i></span>
+                <span class="txt-link">dublador de audio</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../html/geração.de.conteudo.htm">
+                <span class="icon"><i class="bi bi-pencil"></i></span>
+                <span class="txt-link">Inspiração</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../html/conversão.de.fala.html">
+                <span class="icon"><i class="bi bi-file-text"></i></span>
+                <span class="txt-link">Conversão de Fala para Texto</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../html/ornaganização.html">
+                <span class="icon"><i class="bi bi-check-square"></i></span>
+                <span class="txt-link">Organização e Produtividade</span>
+              </a>
+            </li>
+            <li class="item-menu">
+              <a href="../html/transcrição.de.imagen.html">
+                <span class="icon"><i class="bi bi-file-earmark-image"></i></span>
+                <span class="txt-link">Transcrição de Imagens</span>
+              </a>
+        </li>
+        <!-- Adicione ícones correspondentes para as demais categorias -->
+      </ul>
+    </nav>
+    
+  
+
+
+        </body>
+        
+        </html>
